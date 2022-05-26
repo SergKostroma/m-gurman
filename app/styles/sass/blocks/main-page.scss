@@ -1,0 +1,241 @@
+.container{
+  max-width:1600px;
+  background-color:#F7F7F7;
+  margin:0 auto;
+  padding:20px 16px 47px 15px; 
+}
+.main-page-wrapper{
+  display:flex;
+  
+}
+
+.left-sidebar{
+  display:flex;
+  flex-direction: column;
+  padding-right:50px;
+  
+  &__item{
+    display:flex;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items:center;
+    padding:12px;
+    width:48px;
+    height:48px;
+  }
+  &__item:hover{
+    background: #fff;
+    border:0.5px solid #F0F0F0;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3), 0px 2px 4px rgba(0, 0, 0, 0.03), 0px 1px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+  }
+}
+
+.content{
+  max-width:1372px;
+  width:100%;
+}
+
+.header{
+  display:flex;
+  justify-content: space-between;
+  margin-bottom:40px;
+  &__logo{
+    margin-right:30px;
+  }
+  &__menu{
+    display: flex;
+  }
+    &__searching{
+    width:545px;
+    padding: 12px 14px 12px 16px;
+    border: 1px solid #E1E1E1;
+    border-radius: 10px;
+
+   
+  }
+}
+
+.current-user{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width:257px;
+  width:100%;
+
+}
+
+.notifications{
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  background: #fff;
+  border:0.5px solid #F0F0F0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.03), 0px 1px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  padding:12px;
+  width:48px;
+  height:48px;  
+}
+
+.main-panel{
+  &__title{
+    font-weight: 600;
+    font-size:32px;
+    line-height:40px;
+    color:#1E1E1E;
+    margin-bottom: 20px;
+  }
+  &__content{
+    display:grid;
+    grid-template-columns: repeat(3, calc(33% - 20px));
+    gap:20px;
+  }
+}
+.newsblock{
+  padding:24px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.03), 0px 1px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  &__news{
+    padding-top: 18px;
+    padding-bottom: 20px;
+    border-bottom: 0.5px #E1E1E1 solid;
+  }
+  &__news:last-child{
+    border-bottom:none;
+  }
+  &__news-author{
+    display:flex;
+    align-items: center;
+  }
+  &__news-author-photo{
+    margin-right: 8px;
+  }
+  &__news-author-name{
+    font-weight: 500;
+    font-size:13px;
+    line-height:18px;
+    color:#E30016;
+  }
+  &__news-text{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight:400;
+    font-size:14px;
+    line-height:21px;
+  }
+  &__news-date{
+    font-weight:400;
+    font-size:13px;
+    line-height:16px;
+    color:#ACACAC;
+  }
+}
+.workblock{
+  display:flex;
+  flex-direction: column;
+  gap:20px;
+  &__chapter{
+    display:flex;
+    flex-direction: column;
+    padding:24px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.03), 0px 1px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    
+  }
+ 
+  &__chapter-content{
+    display:flex;
+    align-items:baseline;
+  }
+  &__chapter-title{
+    font-weight:500;
+    font-size:20px;
+    line-height:25px;
+  }
+  &__chapter-icon{
+    display:flex;
+    justify-content: flex-end;
+  }
+  &__chapter-counter{
+    padding: 2px 6px;
+    height:19px;
+    width:25px;
+    background-color: #F7F7F7;
+    border-radius: 10px;
+    color:#ACACAC;
+    font-weight:400;
+    font-size:12px;
+    line-height:15px;
+  }
+}
+
+.birthdays{
+  padding:24px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.03), 0px 1px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 15px;
+  max-height:431px;
+  &__title{
+    margin-bottom: 18px;
+  }
+  &__man{
+    display: flex;
+    margin-bottom: 18px;
+      }
+  &__man-foto{
+    margin-right: 12px;
+  }
+  &__man-name{
+    font-weight:500;
+    font-size:14px;
+    line-height:19px;
+    color:#1E1E1E;
+  }
+  &__man-date{
+    font-size:14px;
+    font-weight:400;
+    line-height:19px;
+    color:#ACACAC;
+  }
+  &__active{
+    background-color: #F5FFE4;
+    padding:10px;
+    border-radius: 10px;
+  }
+}
+h2{
+    font-weight: 500;
+    font-size:20px;
+    line-height:25px;
+    color:#1E1E1E;
+}
+
+.expand-all-button{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px 16px;
+  border: 1px solid #EBEBEB;
+  border-radius: 8px;
+  &__name{
+    font-weight:500;
+    font-size:14px;
+    line-height:17px;
+    color:#1E1E1E;
+    margin-right: 9px;
+
+  }
+}
+.right-sidebar{
+  display:flex;
+  flex-direction: column;
+  padding-left:50px;
+  &__item{
+    margin-bottom: 10px;
+  }
+
+}
+
