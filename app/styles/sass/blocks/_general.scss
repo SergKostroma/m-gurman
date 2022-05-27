@@ -23,3 +23,38 @@ p{
 .inter{
     font-family: 'Inter', sans-serif;
 }
+.block-link{
+    display:block;
+    cursor:pointer;
+}
+button{
+    border:none;
+    border-radius: 10px;
+    background: none;
+    
+}
+
+.user{
+    cursor:pointer;
+    &__image{
+        width:48px;
+        height:48px;
+    }
+    &__image-small{
+        width: 24px;
+        height:24px;
+    }
+}
+
+input::placeholder{
+    font-size:14px;
+    font-weight:500;
+    line-height:17px;
+    font-family: 'Inter', sans-serif;
+}
+input:hover{
+    cursor: pointer;
+}
+input:active{
+    border:1px solid grey;
+}

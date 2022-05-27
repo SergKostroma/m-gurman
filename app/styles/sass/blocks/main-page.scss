@@ -2,7 +2,7 @@
   max-width:1600px;
   background-color:#F7F7F7;
   margin:0 auto;
-  padding:20px 16px 47px 15px; 
+  padding:20px 16px 16px 15px; 
 }
 .main-page-wrapper{
   display:flex;
@@ -23,12 +23,6 @@
     width:48px;
     height:48px;
   }
-  &__item:hover{
-    background: #fff;
-    border:0.5px solid #F0F0F0;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3), 0px 2px 4px rgba(0, 0, 0, 0.03), 0px 1px 1px rgba(0, 0, 0, 0.05);
-    border-radius: 10px;
-  }
 }
 
 .content{
@@ -48,24 +42,32 @@
   }
     &__searching{
     width:545px;
-    padding: 12px 14px 12px 16px;
+    padding: 12px 14px 12px 48px;
     border: 1px solid #E1E1E1;
     border-radius: 10px;
-
-   
+    background-image:url(/images/dist/search-icon.svg);
+    background-repeat:no-repeat;
+    background-position:17px;
   }
+ 
 }
 
 .current-user{
   display:flex;
   align-items: center;
   justify-content: space-between;
-  max-width:257px;
+  max-width:256px;
   width:100%;
+  &__name{
+    font-weight:500;
+    font-size:14px;
+    color:#0F0F0F;
+  }
 
 }
 
 .notifications{
+  position: relative;
   display:flex;
   justify-content: center;
   align-items:center;
@@ -75,7 +77,23 @@
   border-radius: 10px;
   padding:12px;
   width:48px;
-  height:48px;  
+  height:48px; 
+  &__counter{
+    position:absolute;
+    top:-7px;
+    right:-5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px 6px;
+    background-color: #E30016;
+    width:23px;
+    height:17px;
+    color:#fff;
+    font-size:10px;
+    line-height: 12px;
+    border-radius: 10px;
+  } 
 }
 
 .main-panel{
@@ -100,10 +118,10 @@
   &__news{
     padding-top: 18px;
     padding-bottom: 18px;
-    border-bottom: 0.5px #E1E1E1 solid;
+    border-top: 0.5px #E1E1E1 solid;
   }
-  &__news:nth-of-type(3){
-    border-bottom:none;
+  &__news:nth-of-type(1){
+    border-top:none;
   
   }
   &__news-author{
@@ -142,12 +160,12 @@
     flex-direction: column;
     padding-top:21px;
     padding-left:25px;
-    padding-bottom:17px;
+    padding-bottom:22px;
     padding-right:22px;
     background-color: #fff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.03), 0px 1px 1px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
-    
+    cursor:pointer;
   }
  
   &__chapter-content{
@@ -157,7 +175,7 @@
   &__chapter-title{
     font-weight:500;
     font-size:20px;
-    line-height:25px;
+    line-height:19px;
   }
   &__chapter-icon{
     display:flex;
@@ -186,6 +204,9 @@
   &__title{
     margin-bottom: 18px;
   }
+  &__list{
+    margin-bottom: 25px;
+  }
   &__man{
     display: flex;
     margin-bottom: 18px;
@@ -198,6 +219,7 @@
     font-size:14px;
     line-height:19px;
     color:#1E1E1E;
+    margin-bottom:4px;
   }
   &__man-date{
     font-size:14px;
@@ -228,6 +250,7 @@ h2{
   border: 1px solid #EBEBEB;
   border-radius: 8px;
   margin-top:10px;
+  cursor:pointer;
   &__name{
     font-weight:500;
     font-size:14px;
@@ -244,6 +267,27 @@ h2{
   &__item{
     margin-bottom: 10px;
   }
+  &__button{
+    border: 1px solid #E1E1E1;
+    border-radius: 10px;
+  }
+  &__mail-button{
+    margin-top: 45px;
+  }
 
 }
+.sidebar-button{
+display:flex;
+justify-content: center;
+align-items:center;
+padding:12px;
+width:48px;
+height:48px;
+}
 
+.sidebar-button:hover{
+    background: #fff;
+    border:0.5px solid #F0F0F0;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3), 0px 2px 4px rgba(0, 0, 0, 0.03), 0px 1px 1px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
