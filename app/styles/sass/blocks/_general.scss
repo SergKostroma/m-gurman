@@ -53,6 +53,10 @@ input::placeholder{
 input:hover{
     cursor: pointer;
 }
-input:active{
-    border:1px solid grey;
+input{
+    outline: none;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
 }
