@@ -25,6 +25,7 @@
  .tag{
     display:flex;
     align-items: baseline;
+    justify-content:center;
     color:#79A63B;
     &__counter{
         padding: 2px 6px;
@@ -46,6 +47,7 @@
     }
     &__fixed{
         max-width:174px;
+        width:100%;
         padding:10px;
         background-color: #F5FFE4;
         border-radius: 5px;

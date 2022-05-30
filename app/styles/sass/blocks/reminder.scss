@@ -1,0 +1,116 @@
+.reminder{
+    max-width:544px;
+    width:100%;
+    &__title-block{
+        display: flex;   
+        align-items: baseline;
+        justify-content: center;    
+    }
+    &__title{
+        margin-right: 10px;
+        font-size:15px;
+        font-weight:500;
+        color:#000; 
+        margin-bottom: 19px;       
+    }
+    &__image{
+        margin-right: 7px;
+    }
+    &__action{
+        font-size:14px;
+        font-weight:500;
+        color:#E30016;
+        border-bottom: #E30016 0.5px solid;
+    }
+    &__block{
+        position:relative;
+        max-width:544px;
+        width:100%;
+        padding:20px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16), 0px 1px 1px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+    }
+    &__block:after,
+      &__block:before {
+          content: '';
+          position: absolute;
+          top: -8px;
+          border-bottom: 8px solid;
+          display: block;
+          width: 0;
+          height: 0;
+      }
+      &__block:after {
+          border-color: #fff;
+          left: 333px;
+          border-left: 7px solid transparent !important;
+          border-right: 7px solid transparent !important;
+      }
+      &__block:before {
+          margin-bottom: -1px;
+          border-color: #ccc;
+          color: #ccc;
+          left: 332px;
+          border-left: 8px solid transparent !important;
+          border-right: 8px solid transparent !important;
+      }
+    &__block-title{
+        font-size:14px;
+        font-weight:500;
+        color:#000;
+        margin-bottom: 16px;
+    }
+    &__type{
+        color:#E30016;
+    }
+    &__close-btn{
+        position: absolute;
+        top:16px;
+        right:16px;
+        cursor:pointer;
+    }
+    &__form{
+        display: flex;
+        flex-wrap:nowrap;
+        justify-content: space-between;
+        margin-bottom:16px;
+    }
+    &__date{
+        width:196px;
+        padding:14px;
+        border: 1px solid #EBEBEB;
+        border-radius: 8px;
+    }
+    &__chooser{
+        width:196px;
+        padding:14px;
+        border: 1px solid #EBEBEB;
+        border-radius: 8px;
+    }
+    &__block-buttons{
+        display: flex;
+        align-items: baseline;
+        padding:4px;
+        background-color: #EAEAEA;
+        width:88px;
+        height:46px;
+        border-radius: 10px;
+        justify-content: space-between;
+    }
+    &__block-button{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        width:38px;
+        height:38px;
+        padding:10px;
+        border-radius: 5px;
+        cursor:pointer;
+    }
+    &__block-button:hover{
+        background-color: #fff;
+    }
+}
+.selector-option{
+    font-size: 14px;
+}
