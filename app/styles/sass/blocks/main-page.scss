@@ -143,6 +143,7 @@
     font-weight:400;
     font-size:14px;
     line-height:21px;
+    cursor:pointer;
   }
   &__news-date{
     font-weight:400;
@@ -259,6 +260,10 @@ h2{
     margin-right: 9px;
 
   }
+}
+.expand-all-button:hover{
+  border: 1px solid #C6C6C6;
+  box-shadow:0px 1px 1px rgba(0, 0, 0, 0.3);
 }
 .right-sidebar{
   display:flex;

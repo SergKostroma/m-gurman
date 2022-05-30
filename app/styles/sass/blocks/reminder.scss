@@ -15,12 +15,14 @@
     }
     &__image{
         margin-right: 7px;
+        cursor:pointer;
     }
     &__action{
         font-size:14px;
         font-weight:500;
         color:#E30016;
         border-bottom: #E30016 0.5px solid;
+        cursor:pointer;
     }
     &__block{
         position:relative;
@@ -62,6 +64,7 @@
     }
     &__type{
         color:#E30016;
+        cursor:pointer;
     }
     &__close-btn{
         position: absolute;
@@ -89,7 +92,7 @@
     }
     &__block-buttons{
         display: flex;
-        align-items: baseline;
+        align-items: center;
         padding:4px;
         background-color: #EAEAEA;
         width:88px;

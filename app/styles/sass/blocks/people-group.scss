@@ -39,8 +39,15 @@
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.16), 0px 1px 1px rgba(0, 0, 0, 0.1);
         border-radius: 5px;
     }
-    &__block:after,
-      &__block:before {
+    
+   
+    &__groups{
+        flex:1;
+        padding:18px;
+        padding-top: 6px;
+    }
+    &__groups:after,
+      &__groups:before {
           content: '';
           position: absolute;
           top: -8px;
@@ -49,25 +56,20 @@
           width: 0;
           height: 0;
       }
-      &__block:after {
+      &__groups:after {
           border-color: #fff;
-          left: 13px;
+          left: 333px;
           border-left: 7px solid transparent !important;
           border-right: 7px solid transparent !important;
       }
-      &__block:before {
+      &__groups:before {
           margin-bottom: -1px;
           border-color: #ccc;
           color: #ccc;
-          left: 12px;
+          left: 332px;
           border-left: 8px solid transparent !important;
           border-right: 8px solid transparent !important;
       }
-   
-    &__groups{
-        flex:1;
-        padding:18px;
-    }
     
     &__name{  
         font-size: 14px;
@@ -78,7 +80,7 @@
     &__title{
         display:flex;
         align-items: center;
-        margin-bottom: 12px;
+        padding-top: 12px;      
         cursor: pointer;
     }
     &__drop-button{
@@ -88,6 +90,9 @@
     &__opened{
         margin-left: 8px;
         border-left:1px solid #E1E1E1;
+    }
+    &__users{
+        margin-top: 14px;
     }
     &__filters{
         max-width:284px;

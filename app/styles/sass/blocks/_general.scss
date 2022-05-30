@@ -52,6 +52,8 @@ button{
 
 select{
     height:46px;
+    font-size:14px;
+    font-weight:500;
 }
 
 input::placeholder{
@@ -82,4 +84,8 @@ body{
 .input-inactive{
   border:none;
   background-color: #F4F4F4;
+}
+input:focus{
+    border:1px solid  #C6C6C6;
+    
 }

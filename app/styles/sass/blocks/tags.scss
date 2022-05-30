@@ -55,6 +55,9 @@
     &__fixed-overdue{
         background-color: #FFF1F1;
     }
+    &__close-button{
+        cursor:pointer;
+    }
 }
 .overdue-counter{
     background-color: #E30016;
