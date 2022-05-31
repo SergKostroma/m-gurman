@@ -1,91 +1,149 @@
 // GENERAL PROJECT STYLES
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
- 
-a{
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+a {
     text-decoration: none;
-    color:#000;
+    color: #000;
 }
 
-h2{
-    margin:0;
+h2 {
+    margin: 0;
 }
 
-p{
-    margin:0;
+p {
+    margin: 0;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
 
-.inter{
+.inter {
     font-family: 'Inter', sans-serif;
 }
 
-.block-link{
-    display:block;
-    cursor:pointer;
+.block-link {
+    display: block;
+    cursor: pointer;
 }
-button{
-    border:none;
+
+button {
+    border: none;
     background: none;
 }
 
-.user{
-    cursor:pointer;
-    &__image{
-        width:48px;
-        height:48px;
+.user {
+    cursor: pointer;
+
+    &__image {
+        width: 48px;
+        height: 48px;
     }
-    &__image-medium{
-        width:38px;
-        height:38px;
+
+    &__image-medium {
+        width: 38px;
+        height: 38px;
     }
-    &__image-small{
+
+    &__image-small {
         width: 24px;
-        height:24px;
+        height: 24px;
     }
 }
 
-select{
-    height:46px;
-    font-size:14px;
-    font-weight:500;
+select {
+    height: 46px;
+    font-size: 14px;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+    
 }
 
-input::placeholder{
-    font-size:14px;
-    font-weight:500;
-    line-height:17px;
+input::placeholder {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
     font-family: 'Inter', sans-serif;
 }
-input:hover{
+
+input:hover {
     cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
 }
-input{
-    height:46px;
+
+input {
+    height: 46px;
     outline: none;
     border: 1px solid #EBEBEB;
     border-radius: 8px;
 }
-select{
-    outline: none;
-    cursor:pointer;
+
+
+
+
+.input-inactive {
+    border: none;
+    background-color: #F4F4F4;
 }
 
-body{
-    font-family: 'Inter', sans-serif;
+input:focus {
+    border: 1px solid #C6C6C6;
 }
 
-.input-inactive{
-  border:none;
-  background-color: #F4F4F4;
+input[type=date] {
+    text-align: right;
+    display: flex;
+    justify-content: space-between;
 }
-input:focus{
-    border:1px solid  #C6C6C6;
-    
+
+input[type="date"]:before {
+    color: lightgrey;
+    content: attr(placeholder) !important;
+    margin-right: 0.5em;
 }
+
+input[type="date"]:focus:before {
+    content: '' !important;
+}
+
+input::-webkit-datetime-edit,
+input::-webkit-inner-spin-button,
+input::-webkit-clear-button {
+    display: none;
+}
+
+.close-button {
+    cursor: pointer;
+}
+
+.expand-all-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 16px;
+    border: 1px solid #EBEBEB;
+    border-radius: 8px;
+    margin-top: 10px;
+    cursor: pointer;
+  
+    &__name {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #1E1E1E;
+      margin-right: 9px;
+  
+    }
+  }
+  
+  .expand-all-button:hover {
+    border: 1px solid #C6C6C6;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
+  }

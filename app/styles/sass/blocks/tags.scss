@@ -1,67 +1,79 @@
-.tags{
+.tags {
     display: flex;
     align-items: center;
-    &__list{
+
+    &__list {
         display: flex;
         align-items: center;
         margin-right: 13px;
     }
-    &__list-name{
-        color:#1E1E1E;
-        font-weight:500;
+
+    &__list-name {
+        color: #1E1E1E;
+        font-weight: 500;
         font-size: 14px;
         margin-right: 24px;
     }
-    
-    &__all{
-        display:flex;
-        width:120px;
+
+    &__all {
+        display: flex;
+        width: 120px;
         justify-content: space-between;
-        font-size:14px;
-        cursor:pointer;
-    } 
+        font-size: 14px;
+        cursor: pointer;
+    }
+    &__all:hover{
+        color:#841F1C
+    }
 }
 
- .tag{
-    display:flex;
+.tag {
+    display: flex;
     align-items: baseline;
-    justify-content:center;
-    color:#79A63B;
-    &__counter{
+    justify-content: center;
+    color: #79A63B;
+
+    &__counter {
         padding: 2px 6px;
-        height:19px;
-        width:25px;
-        background-color:#79A63B;
+        height: 19px;
+        width: 25px;
+        background-color: #79A63B;
         border-radius: 10px;
-        color:#fff;
-        font-weight:400;
-        font-size:12px;
-        line-height:15px;
+        color: #fff;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 15px;
         margin-right: 7px;
-    } 
-    &__name{
-        font-weight:500;
-        font-size:14px;
-        line-height:17px;
-        margin-right:15px;
     }
-    &__fixed{
-        max-width:174px;
-        width:100%;
-        padding:10px;
+
+    &__name {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        margin-right: 15px;
+    }
+
+    &__fixed {
+        max-width: 174px;
+        width: 100%;
+        padding: 10px;
         background-color: #F5FFE4;
         border-radius: 5px;
     }
-    &__fixed-overdue{
+
+    &__fixed-overdue {
         background-color: #FFF1F1;
     }
-    &__close-button{
-        cursor:pointer;
+
+    &__close-button {
+        cursor: pointer;
     }
 }
-.overdue-counter{
+
+.overdue-counter {
     background-color: #E30016;
 }
-.overdue{
-    color:#E30016;
+
+.overdue {
+    color: #E30016;
 }
