@@ -53,7 +53,6 @@
     background-repeat: no-repeat;
     background-position: 17px;
   }
-
 }
 
 .current-user {
@@ -68,7 +67,6 @@
     font-size: 14px;
     color: #0F0F0F;
   }
-
 }
 
 .notifications {
@@ -132,7 +130,6 @@
 
   &__news:nth-of-type(1) {
     border-top: none;
-
   }
 
   &__news-author {
@@ -183,8 +180,7 @@
     background-color: #fff;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.03), 0px 1px 1px rgba(0, 0, 0, 0.05);
     border-radius: 10px;
-    cursor: pointer;
-   
+    cursor: pointer; 
   }
 
   &__chapter-content {
@@ -261,7 +257,6 @@
     padding: 10px;
     border-radius: 10px;
   }
-
 }
 
 h2 {
@@ -294,7 +289,6 @@ h2 {
   &__mail-button {
     margin-top: 45px;
   }
-
 }
 
 .sidebar-button {
