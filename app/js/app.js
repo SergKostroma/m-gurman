@@ -12,5 +12,16 @@ document.addEventListener('DOMContentLoaded', () => {
 			redButton.classList.toggle('red-button-active')
 		}
 	} 
+    
+	const whiteButtons = document.querySelectorAll('.white-button')
+	for (let whiteButton of whiteButtons){
+		whiteButton.addEventListener ('click', whiteButtonActivizer)
+		function whiteButtonActivizer(){
+			whiteButton.classList.toggle('white-button-active')
+		}
+	}
+
+
+
 
 })
