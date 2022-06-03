@@ -17,19 +17,9 @@
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 1px 1px rgba(0, 0, 0, 0.05);
 }
 
-.red-button-active {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.red-button:active {
   background-color: #D20317;
   box-shadow: inset 0px 3px 2px rgba(0, 0, 0, 0.09);
-  color: #fff;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  font-family: 'Inter', sans-serif;
-  padding: 14px 42px;
-  border-radius: 8px;
 }
 
 .red-button-inactive {
@@ -166,7 +156,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 120px;
   border: 1px solid #EBEBEB;
   font-weight: 500;
   font-size: 14px;
@@ -183,21 +172,10 @@
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
-.white-button-active {
+.white-button:active {
  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: 120px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  color: #1E1E1E;
-  padding: 14px 16px;
   border: 1px solid #EBEBEB;
-  border-radius: 8px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), inset 0px 3px 2px rgba(0, 0, 0, 0.09);
-  border-radius: 8px;
 }
 
 .white-button-inactive{
