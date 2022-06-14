@@ -1,0 +1,63 @@
+input[type=checkbox] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  width: 0;
+  height: 0;
+}
+
+
+input[type=checkbox]+label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #E1E1E1;
+  border-radius: 5px;
+}
+
+
+input[type=checkbox]:checked+label {
+  background-position: center;
+  background-size: 12px 9px;
+  background:
+    #E30016,
+    url(/images/dist/check.svg) no-repeat;
+}
+
+input[type=checkbox]+label:hover {
+  background: #FFF1F1;
+  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+input[type=checkbox]:disabled+label {
+  background-color: #E1E1E1;
+}
+
+.checkbox-button {
+  border-radius: 5px;
+  border: 1px solid #E1E1E1;
+  cursor: pointer;
+}
+
+input[type=radio]+label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #E1E1E1;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type=radio]:checked+label {
+  border: 4px solid #E30016;
+}
+
+input[type=radio]:hover+label {
+  background: #FFF1F1;
+  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+input[type=radio]:disabled+label {
+  background-color: #E1E1E1;
+}

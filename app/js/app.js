@@ -28,22 +28,18 @@ document.addEventListener('DOMContentLoaded', () => {
 	// }
 
 
-	//  const redButtons = document.querySelectorAll('.red-button');
+// 	  const redButtons = document.querySelectorAll('.red-button');
 
-	//  for (let redButton of redButtons) {	
-	//  	document.addEventListener('click', redButtonActivate)
+// 	  for (let redButton of redButtons) {	
+// 	  	document.addEventListener('click', redButtonActivate)
 
-	//  	function redButtonActivate(event) {
-	//  		if (event.target.classList.contains('red-button')) {
-	//  			event.target.classList.add('red-button-active')
-	//  		} else {
-	//  			redButton.classList.remove('red-button-active')
-	//  		}
-	//  	}
-	//  }
+// 	  	function redButtonActivate(event) {
+// 	  		if (event.target.classList.contains('red-button')) {
+// 	  			event.target.classList.add('red-button-active')
+// 	  		} else {
+// 	  			redButton.classList.remove('red-button-active')
+// 	  		}
+// 	  	}
+// 	  }
 
-    
-
-
-
-})
+ })
